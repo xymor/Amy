@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "Amy is an AngularJS, MaterialUI, and Electron app starter.",
   "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "cd client; ../node_modules/bower/bin/bower install"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/develephant/amy.git"
@@ -24,6 +28,10 @@
   },
   "homepage": "https://github.com/develephant/amy#readme",
   "dependencies": {
+    "bower": "^1.6.8",
     "diskdb": "^0.1.14"
+  },
+  "devDependencies": {
+    "electron-prebuilt": "^0.25.1-1"
   }
 }
